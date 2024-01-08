@@ -1,0 +1,118 @@
+
+body {
+    margin: 0px;
+}
+table {
+    width: 70vh;
+    height: 70vh;
+    color: white;
+    background-color: rgb(40, 40, 40);
+}
+td {
+    width: 25%;
+    text-align: center;
+    font-size: 24px;
+    background-color: rgb(20, 20, 20);
+}
+td:hover {
+    cursor: pointer;
+}
+
+#resultArea {
+    height: 10vh;
+    width: 70vh;
+    background-color: rgb(38, 36, 36);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 24px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 48px;
+}
+
+
+
+@media (max-width: 700px) {
+    #resultArea {
+        height: calc(10vh * 0.4);
+        width: calc(70vh * 0.4);
+        padding: calc(24px * 0.4);
+        background-color: rgb(38, 36, 36);
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        box-sizing: border-box;
+        color: white;
+        font-size: 48px;
+    }
+    td {
+        width: calc(25% * 0.4);
+        text-align: center;
+        font-size: 24px;
+        background-color: rgb(20, 20, 20);
+    }
+    table {
+        width: calc(70vh * 0.4);
+        height: calc(70vh * 0.4);
+        color: white;
+        background-color: rgb(40, 40, 40);
+    }
+
+}
+
+
+.highlight-hover:hover {
+    background-color: rgb(59, 13, 145);
+}
+.math-ac {
+    background-color: rgb(69, 4, 4);
+    font-weight: 500;
+}
+.math-save-result {
+    background-color: rgb(6, 95, 17);
+}
+.math-percentage {
+    background-color: rgb(155, 94, 8);
+}
+.math-divided {
+    background-color: rgb(8, 62, 155);
+}
+.math-multiplied {
+    background-color: rgb(155, 145, 8);
+}
+.math-minus {
+    background-color: rgb(155, 8, 8);
+}
+.math-plus {
+    background-color: rgb(55, 155, 8);
+}
+.math-result {
+    background-color: rgb(143, 8, 155);
+}
+
+.math-ac:hover {
+    background-color: rgb(99, 34, 34);
+}
+.math-save-result:hover {
+    background-color: rgb(36, 125, 47);
+    
+}
+.math-percentage:hover {
+    background-color: rgb(185, 124, 38);
+}
+.math-divided:hover {
+    background-color: rgb(38, 92, 185);
+}
+.math-multiplied:hover {
+    background-color: rgb(185, 175, 38);
+}
+.math-minus:hover {
+    background-color: rgb(185, 38, 38);
+}
+.math-plus:hover {
+    background-color: rgb(85, 185, 38);
+}
+.math-result:hover {
+    background-color: rgb(173, 38, 185);
+}

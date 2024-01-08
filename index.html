@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" type="image/x-icon" href="/img/calculator-solid.svg">
+    <script src="https://kit.fontawesome.com/87f8c841d6.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="resultArea"></div>
+
+    <table>
+        <tr>
+            <td onclick="deleteEntries()" class="math-ac"><i class="fa-solid fa-eraser"></i></td>
+            <td onclick="executeOperation('nil')" class="math-save-result"><i class="fa-regular fa-floppy-disk"></i></td>
+            <td onclick="calculatePercentage()" class="math-percentage"><i class="fa-solid fa-percent"></i></td>
+            <td onclick="executeOperation(' / ')" class="math-divided"><i class="fa-solid fa-divide"></i></td>
+        </tr>
+        <tr>
+            <td class="highlight-hover" onclick="executeOperation(7)"><i class="fa-solid fa-7"></i></td>
+            <td class="highlight-hover" onclick="executeOperation(8)"><i class="fa-solid fa-8"></i></td>
+            <td class="highlight-hover" onclick="executeOperation(9)"><i class="fa-solid fa-9"></i></td>
+            <td onclick="executeOperation(' * ')" class="math-multiplied"><i class="fa-solid fa-xmark"></i></td>
+        </tr>
+        <tr>
+            <td class="highlight-hover" onclick="executeOperation(4)"><i class="fa-solid fa-4"></i></td>
+            <td class="highlight-hover" onclick="executeOperation(5)"><i class="fa-solid fa-5"></i></td>
+            <td class="highlight-hover" onclick="executeOperation(6)"><i class="fa-solid fa-6"></i></td>
+            <td onclick="executeOperation(' - ')" class="math-minus"><i class="fa-solid fa-minus"></i></td>
+        </tr>
+        <tr>
+            <td class="highlight-hover" onclick="executeOperation(1)"><i class="fa-solid fa-1"></i></td>
+            <td class="highlight-hover" onclick="executeOperation(2)"><i class="fa-solid fa-2"></i></td>
+            <td class="highlight-hover" onclick="executeOperation(3)"><i class="fa-solid fa-3"></i></td>
+            <td onclick="executeOperation(' + ')" class="math-plus"><i class="fa-solid fa-plus"></i></td>
+        </tr>
+        <tr>
+            <td class="highlight-hover" onclick="executeOperation(0)" id="zero-button"><i class="fa-solid fa-0"></i></td>
+            <td class="highlight-hover" onclick="executeOperation('.')">,</td>
+            <td class="empty">V</td>
+            <td onclick="calculateResult()" class="math-result"><i class="fa-solid fa-equals"></i></td>
+        </tr>
+    </table>
+</body>
+</html>
